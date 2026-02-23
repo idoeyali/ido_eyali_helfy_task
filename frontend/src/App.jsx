@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./styles/app.css";
-import { deleteTask, getTasks, toggleTask } from "./services/tasksApi";
+import { deleteTask, getTasks, toggleTask, updateTask } from "./services/tasksApi";
 import TaskForm from "./components/TaskForm";
 import TaskFilter from "./components/TaskFilter";
 import TaskList from "./components/TaskList";
@@ -53,6 +53,15 @@ function App() {
     }
   }
 
+  async function handleUpdate(id, payload) {
+    try {
+      const updated = await updateTask(id, payload);
+      setTasks((prev) => prev.map((t) => (t.id === id ? updated : t)));
+    } catch (err) {
+      alert(err.message || "Failed to update task");
+    }
+  }
+
   return (
     <div className="app-container">
       <header className="app-header">
@@ -87,7 +96,12 @@ function App() {
             </p>
           </div>
 
-          <TaskList tasks={visibleTasks} onToggle={handleToggle} onDelete={handleDelete} />
+          <TaskList
+            tasks={visibleTasks}
+            onToggle={handleToggle}
+            onDelete={handleDelete}
+            onUpdate={handleUpdate}
+          />
         </>
       )}
     </div>

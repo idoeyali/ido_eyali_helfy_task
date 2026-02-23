@@ -214,3 +214,14 @@ body {
     background-color: #ffe6e6;
     border-color: #ffb3b3;
 }
+
+.task-item.editing {
+    background-color: #ffffe6;
+    border-color: #e6e6a8;
+}
+
+.task-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
