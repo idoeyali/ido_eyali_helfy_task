@@ -1,70 +1,216 @@
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f2f2f2;
-  }
-  
-  /* Main container */
-  .app-container {
+}
+
+/* Main container */
+.app-container {
     width: 80%;
     max-width: 900px;
     margin: 30px auto;
     background-color: white;
     padding: 20px;
     border: 1px solid #ddd;
-  }
-  
-  /* Header */
-  .app-header {
+}
+
+/* Header */
+.app-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  /* Title */
-  .app-header h1 {
+}
+
+/* Title */
+.app-header h1 {
     margin: 0;
     color: #333;
-  }
-  
-  /* Button styling */
-  .btn {
+}
+
+/* Button styling */
+.btn {
     background-color: #04AA6D;
     color: white;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #03965f;
-  }
-  
-  /* Disabled button */
-  .btn:disabled {
+}
+
+/* Disabled button */
+.btn:disabled {
     background-color: #999;
     cursor: not-allowed;
-  }
-  
-  /* Error box */
-  .error-box {
+}
+
+/* Error box */
+.error-box {
     background-color: #ffe6e6;
     border: 1px solid #ff4d4d;
     padding: 10px;
     margin-top: 10px;
-  }
-  
-  .error-field {
+}
+
+.error-field {
     font-size: 14px;
     color: #cc0000;
-  }
-  
-  /* Info section */
-  .meta {
+}
+
+/* Info section */
+.meta {
     margin-top: 15px;
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-  }
+}
+
+/* Task form */
+.form-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.field-error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* Filter */
+.filter-box {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.filter-label {
+    margin-right: 8px;
+}
+
+.filter-btn {
+    margin-right: 6px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #eee;
+}
+
+.filter-btn.active {
+    background-color: #04AA6D;
+    color: white;
+    border-color: #04AA6D;
+}
+
+/* Task list */
+.task-list {
+    margin-top: 15px;
+}
+
+.task-item {
+    border: 1px solid #ddd;
+    padding: 12px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.task-item.done {
+    background-color: #f1fff6;
+    border-color: #a6e3be;
+}
+
+.task-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.task-title {
+    margin: 0;
+    color: #333;
+}
+
+.task-desc {
+    margin: 6px 0 0 0;
+    color: #555;
+}
+
+.task-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.task-meta {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Buttons */
+.btn.small {
+    padding: 6px 10px;
+}
+
+.btn.danger {
+    background-color: #d9534f;
+}
+
+.btn.danger:hover {
+    background-color: #c64541;
+}
+
+/* Priority badge */
+.badge {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    height: fit-content;
+}
+
+.badge.low {
+    background-color: #e7f3ff;
+    border-color: #b3d8ff;
+}
+
+.badge.medium {
+    background-color: #fff6e0;
+    border-color: #ffd48a;
+}
+
+.badge.high {
+    background-color: #ffe6e6;
+    border-color: #ffb3b3;
+}
