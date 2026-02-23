@@ -1,5 +1,3 @@
-# ido_eyali_helfy_task
-
 # Task Manager App
 
 A simple fullstack Task Manager application built with **React (Vite)** for the frontend and **Express + Node.js** for the backend.
@@ -81,6 +79,6 @@ PATCH /api/tasks/:id/toggle
 * Simple CSS (no frameworks) was used to keep the implementation lightweight and clear.
 
 ## Time Spent
-Backend - 1.5 Hours
-Frontend - 1 Hour and 45 minutes
-Styling and polish - 45 minutes
+* Backend - 1.5 Hours
+* Frontend - 1 Hour and 45 minutes
+* Styling and polish - 45 minutes
