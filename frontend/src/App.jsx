@@ -4,6 +4,7 @@ import { deleteTask, getTasks, toggleTask, updateTask } from "./services/tasksAp
 import TaskForm from "./components/TaskForm";
 import TaskFilter from "./components/TaskFilter";
 import TaskList from "./components/TaskList";
+import TaskCarousel from "./components/TaskCarousel";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -96,7 +97,7 @@ function App() {
             </p>
           </div>
 
-          <TaskList
+          <TaskCarousel
             tasks={visibleTasks}
             onToggle={handleToggle}
             onDelete={handleDelete}

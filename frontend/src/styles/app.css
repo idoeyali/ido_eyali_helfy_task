@@ -225,3 +225,23 @@ body {
     display: flex;
     gap: 8px;
 }
+
+/* Carousel */
+.carousel {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    will-change: transform;
+}
+
+.carousel-slide {
+    flex: 0 0 320px;
+    /* fixed card width makes looping predictable */
+}
